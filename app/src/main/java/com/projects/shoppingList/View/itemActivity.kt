@@ -51,7 +51,7 @@ class ItemActivity : AppCompatActivity() {
             // Slide the deleted list into view
             if (boolean) {
                 // Change the text to show the user where they are at
-                button.text = "Hide List"
+                button.text = SHOWN_DONE_LIST
                 // Move the button to the same height as the done item list
                 button.animate().translationY(-(rv_done_item.height).toFloat())
                 // Put the bottom of the done item list back at the bottom of the screen
@@ -64,7 +64,7 @@ class ItemActivity : AppCompatActivity() {
             // Remove the list from view
             else {
                 // Change the text to show the user where they are at
-                button.text = "Crossed Off List"
+                button.text = HIDDEN_DONE_LIST
                 // Set button back to bottom of view
                 button.animate().translationY((0).toFloat())
                 // Place top of done item list onto the bottom of the view
@@ -169,9 +169,6 @@ class ItemActivity : AppCompatActivity() {
             super.onOptionsItemSelected(item)
     }
 }
-    ////////////////////////////////////////////////////////////////////////////////////////////////
-    //////////////////////////         Adapters           //////////////////////////////////////////
-    ////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 

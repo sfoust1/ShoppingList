@@ -15,3 +15,6 @@ const val COL_ITEM_NAME = "itemName"
 
 const val INTENT_TODO_ID = "ToDoID"
 const val INTENT_TODO_NAME = "ToDoName"
+
+const val HIDDEN_DONE_LIST = "Crossed Off List"
+const val SHOWN_DONE_LIST = "Hide List"
