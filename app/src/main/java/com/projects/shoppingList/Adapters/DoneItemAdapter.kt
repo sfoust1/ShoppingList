@@ -3,7 +3,6 @@ package com.projects.shoppingList.Adapters
 import android.annotation.SuppressLint
 import android.content.DialogInterface
 import android.view.LayoutInflater
-import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView

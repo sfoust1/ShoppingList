@@ -5,13 +5,10 @@ import android.content.DialogInterface
 import android.os.Bundle
 import android.view.*
 import android.widget.EditText
-import android.widget.ImageView
 import android.widget.Spinner
-import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.projects.shoppingList.Adapters.DoneItemAdapter
 import com.projects.shoppingList.Adapters.ItemAdapter
 import com.projects.shoppingList.Model.ToDoItem

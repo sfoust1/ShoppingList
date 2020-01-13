@@ -95,7 +95,7 @@ class DashboardActivity : AppCompatActivity() {
             holder.toDoName.text = list[index].name
 
             holder.toDoName.setOnClickListener {
-                val intent = Intent(activity,ItemActivity::class.java)
+                val intent = Intent(activity, ItemActivity::class.java)
                 intent.putExtra(INTENT_TODO_ID,list[index].id)
                 intent.putExtra(INTENT_TODO_NAME,list[index].name)
                 activity.startActivity(intent)
