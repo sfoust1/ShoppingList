@@ -28,4 +28,13 @@
         android:padding="8dp"
         android:layout_alignParentEnd="true" />
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_toStartOf="@+id/iv_edit"
+        android:hint="Aisle?"
+        android:padding="8dp"
+        android:textAlignment="center" />
+
 </RelativeLayout>

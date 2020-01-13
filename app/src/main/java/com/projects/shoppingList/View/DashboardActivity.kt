@@ -1,4 +1,4 @@
-package com.projects.ShoppingList
+package com.projects.shoppingList
 
 import android.annotation.SuppressLint
 import android.content.DialogInterface
@@ -12,7 +12,7 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.projects.ShoppingList.Model.ToDo
+import com.projects.shoppingList.Model.ToDo
 import kotlinx.android.synthetic.main.activity_dashboard.*
 
 class DashboardActivity : AppCompatActivity() {
@@ -30,7 +30,7 @@ class DashboardActivity : AppCompatActivity() {
 
         fab_dashboard.setOnClickListener {
             val dialog = AlertDialog.Builder(this)
-            dialog.setTitle("Add ToDo")
+            dialog.setTitle("Add Shopping List")
             val view = layoutInflater.inflate(R.layout.dialog_dashboard, null)
             val toDoName = view.findViewById<EditText>(R.id.ev_todo)
             dialog.setView(view)
@@ -141,7 +141,7 @@ class DashboardActivity : AppCompatActivity() {
                         }
                         // Currently doesn't do anything
                         R.id.menu_reset->{
-                            activity.dbHandler.updateToDoItemCompletedStatus(list[index].id,false)
+                            activity.dbHandler.updateToDoItemCompletedStatus(list[index].id)
                         }
                     }
 

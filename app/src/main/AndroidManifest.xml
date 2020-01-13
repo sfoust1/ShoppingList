@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.projects.ShoppingList">
+    package="com.projects.shoppingList">
 
     <application
         android:allowBackup="true"
@@ -9,16 +9,16 @@
         android:roundIcon="@mipmap/ic_cart2_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.projects.ShoppingList.MainActivity">
+        <activity android:name="com.projects.shoppingList.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name="com.projects.ShoppingList.DashboardActivity">
+        <activity android:name="com.projects.shoppingList.DashboardActivity">
         </activity>
-        <activity android:name="com.projects.ShoppingList.ItemActivity">
+        <activity android:name="com.projects.shoppingList.ItemActivity">
         </activity>
     </application>
 

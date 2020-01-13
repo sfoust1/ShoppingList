@@ -8,7 +8,7 @@ android {
 
     defaultConfig {
         applicationId "com.projects.ShoppingList"
-        minSdkVersion 21
+        minSdkVersion 26
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
@@ -37,3 +37,8 @@ dependencies {
     implementation 'androidx.recyclerview:recyclerview:1.2.0-alpha01'
     implementation 'com.google.android.material:material:1.2.0-alpha03'
 }
+
+//apply plugin: 'com.android.application'
+//apply plugin: 'kotlin-android'
+//apply plugin: 'kotlin-kapt' // Required for annotation processing.
+//apply plugin: 'io.objectbox' // Apply last.
