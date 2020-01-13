@@ -1,4 +1,4 @@
-package com.projects.shoppingList
+package com.projects.shoppingList.view
 
 import android.annotation.SuppressLint
 import android.content.DialogInterface
@@ -12,7 +12,11 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.projects.shoppingList.Model.ToDo
+import com.projects.shoppingList.controller.DBHandler
+import com.projects.shoppingList.model.INTENT_TODO_ID
+import com.projects.shoppingList.model.INTENT_TODO_NAME
+import com.projects.shoppingList.model.ToDo
+import com.projects.shoppingList.R
 import kotlinx.android.synthetic.main.activity_dashboard.*
 
 class DashboardActivity : AppCompatActivity() {
@@ -123,10 +127,10 @@ class DashboardActivity : AppCompatActivity() {
                 popup.setOnMenuItemClickListener {
 
                     when(it.itemId){
-                        R.id.menu_edit->{
+                        R.id.menu_edit ->{
                             activity.updateToDo(list[index])
                         }
-                        R.id.menu_delete->{
+                        R.id.menu_delete ->{
                             val dialog = AlertDialog.Builder(activity)
                             dialog.setTitle("Are you sure")
                             dialog.setMessage("Do you want to delete this task ?")
@@ -140,7 +144,7 @@ class DashboardActivity : AppCompatActivity() {
                             dialog.show()
                         }
                         // Currently doesn't do anything
-                        R.id.menu_reset->{
+                        R.id.menu_reset ->{
                             activity.dbHandler.updateToDoItemCompletedStatus(list[index].id)
                         }
                     }

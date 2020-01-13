@@ -1,4 +1,4 @@
-package com.projects.shoppingList
+package com.projects.shoppingList.view
 
 import android.annotation.SuppressLint
 import android.content.DialogInterface
@@ -9,9 +9,14 @@ import android.widget.Spinner
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.projects.shoppingList.Adapters.DoneItemAdapter
-import com.projects.shoppingList.Adapters.ItemAdapter
-import com.projects.shoppingList.Model.ToDoItem
+import com.projects.shoppingList.*
+import com.projects.shoppingList.adapters.DoneItemAdapter
+import com.projects.shoppingList.adapters.ItemAdapter
+import com.projects.shoppingList.controller.DBHandler
+import com.projects.shoppingList.model.HIDDEN_DONE_LIST
+import com.projects.shoppingList.model.INTENT_TODO_ID
+import com.projects.shoppingList.model.SHOWN_DONE_LIST
+import com.projects.shoppingList.model.ToDoItem
 import kotlinx.android.synthetic.main.activity_item.*
 import java.util.*
 
@@ -20,11 +25,11 @@ class ItemActivity : AppCompatActivity() {
     lateinit var dbHandler: DBHandler
     private var todoId: Long = -1
 
-    var list: MutableList<ToDoItem>? = null
+    private var list: MutableList<ToDoItem>? = null
     var doneList: MutableList<ToDoItem> = ArrayList()
-    var adapter: ItemAdapter? = null
-    var doneAdapter: DoneItemAdapter? = null
-    var boolean = true
+    private var adapter: ItemAdapter? = null
+    private var doneAdapter: DoneItemAdapter? = null
+    private var boolean = true
 
     @SuppressLint("InflateParams")
     override fun onCreate(savedInstanceState: Bundle?) {

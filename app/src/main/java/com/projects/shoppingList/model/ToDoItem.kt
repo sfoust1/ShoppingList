@@ -1,4 +1,4 @@
-package com.projects.shoppingList.Model
+package com.projects.shoppingList.model
 
 //import io.objectbox.annotation.Id
 

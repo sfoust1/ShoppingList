@@ -6,4 +6,5 @@
     <string name="mark_as_completed">Mark as completed</string>
     <string name="reset">Reset</string>
     <string name="line"><strike></strike></string>
+    <string name="HiddenButton">Crossed-Off Items</string>
 </resources>

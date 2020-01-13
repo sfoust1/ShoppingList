@@ -1,4 +1,4 @@
-package com.projects.shoppingList.Adapters
+package com.projects.shoppingList.adapters
 
 import android.annotation.SuppressLint
 import android.content.DialogInterface
@@ -9,8 +9,8 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
 import androidx.recyclerview.widget.RecyclerView
-import com.projects.shoppingList.ItemActivity
-import com.projects.shoppingList.Model.ToDoItem
+import com.projects.shoppingList.view.ItemActivity
+import com.projects.shoppingList.model.ToDoItem
 import com.projects.shoppingList.R
 import kotlinx.android.synthetic.main.activity_item.*
 

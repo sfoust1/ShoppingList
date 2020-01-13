@@ -1,11 +1,10 @@
-package com.projects.shoppingList
+package com.projects.shoppingList.controller
 
 import android.content.ContentValues
 import android.content.Context
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
-import com.projects.shoppingList.Model.ToDo
-import com.projects.shoppingList.Model.ToDoItem
+import com.projects.shoppingList.model.*
 
 class DBHandler(val context: Context) : SQLiteOpenHelper(context, DB_NAME, null, DB_VERSION) {
     // Create table unless one already exists. App would have to be uninstalled if wanted to reset
@@ -50,7 +49,8 @@ class DBHandler(val context: Context) : SQLiteOpenHelper(context, DB_NAME, null,
         val db = writableDatabase
         val cv = ContentValues()
         cv.put(COL_NAME, toDo.name)
-        db.update(TABLE_TODO,cv,"$COL_ID=?" , arrayOf(toDo.id
+        db.update(
+            TABLE_TODO,cv,"$COL_ID=?" , arrayOf(toDo.id
             .toString()))
     }
 

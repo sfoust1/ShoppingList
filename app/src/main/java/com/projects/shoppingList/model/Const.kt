@@ -1,4 +1,4 @@
-package com.projects.shoppingList
+package com.projects.shoppingList.model
 
 const val DB_NAME = "TodoList"
 const val DB_VERSION = 1

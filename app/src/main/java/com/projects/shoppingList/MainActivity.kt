@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.view.View
 import android.view.animation.AnimationUtils
+import com.projects.shoppingList.view.DashboardActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -22,7 +23,7 @@ class MainActivity : AppCompatActivity() {
             Handler().postDelayed({
                 ic_logo.visibility = View.GONE
                 // Begin main activity
-                startActivity(Intent(this,DashboardActivity::class.java))
+                startActivity(Intent(this, DashboardActivity::class.java))
                 finish()
             }, 500)
         }, 1500)
