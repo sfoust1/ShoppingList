@@ -36,9 +36,12 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     implementation 'androidx.recyclerview:recyclerview:1.2.0-alpha01'
     implementation 'com.google.android.material:material:1.2.0-alpha03'
+    implementation "io.objectbox:objectbox-android:$objectboxVersion"
+    annotationProcessor "io.objectbox:objectbox-processor:$objectboxVersion"
 }
 
-//apply plugin: 'com.android.application'
-//apply plugin: 'kotlin-android'
-//apply plugin: 'kotlin-kapt' // Required for annotation processing.
-//apply plugin: 'io.objectbox' // Apply last.
+
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt' // Required for annotation processing.
+apply plugin: 'io.objectbox' // Apply last.

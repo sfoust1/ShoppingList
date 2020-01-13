@@ -16,9 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name="com.projects.shoppingList.DashboardActivity">
+        <activity android:name="com.projects.shoppingList.view.DashboardActivity">
         </activity>
-        <activity android:name="com.projects.shoppingList.ItemActivity">
+        <activity android:name="com.projects.shoppingList.view.ItemActivity">
         </activity>
     </application>
 
